@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckCar</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/mediaQueries.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../assets/icons/checkCarLogo.png" class="logoCheckCar" alt="CheckCar"></a>
+            <ul class="navLinks">
+                <li><a href="paginaIndisponivel.html">Sobre</a></li>
+                <li><a href="paginaIndisponivel.html">Contato</a></li>
+                <li><a href="paginaIndisponivel.html">Privacidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="container" action="../back-end/procuraContaComum.php" method="POST">
+        <fieldset class="signUpContainer">
+            <h2 class="top">Entrar</h2>
+            <div class="middle">
+                <input type="email" name="email" id="email" class="input" placeholder="E-mail" required>
+                <input type="password" name="senha" id="senha" class="input" placeholder="Senha" required>
+            </div>
+            <div class="bottom">
+                <button type="submit" name="submit" class="btn1">Enviar</button>
+                <p>Novo aqui? <a href="cadastrarComum.html">Cadastre-se</a></p>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
